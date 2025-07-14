@@ -1,0 +1,15 @@
+{
+    "type": "module",
+    "dependencies": {
+        "cookie": "^1.0.2",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "jsonwebtoken": "^9.0.2",
+        "pg": "^8.16.2",
+        "redis": "^5.0.1",
+        "uuid": "^11.0.5",
+        "ws": "^8.18.0"
+    }
+}
