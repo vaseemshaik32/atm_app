@@ -47,4 +47,7 @@ There is a yaml file that runs all 7 containers and handle container restarts, p
 This is just an overview of the blocks we have in this app. Check out each directory and their package.json to find more cool stuff and how everything works. 
 
 
+check the app at -  [chicken-fish.site](https://chicken-fish.site/)
+
+
 
