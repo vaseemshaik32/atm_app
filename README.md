@@ -18,13 +18,15 @@ This is for the user authentication during login and usage.
 The API gateway handles this service most of the times. So it is completely independent from the other two services.
 Uses aws-sdk/client-s3 to store profile pictures of registered users and create signed urls for S3.
 Uses HTTPOnly cookies to securely transport the JWT tokens.
+EndPoints:- Register, Login, Logout
 
 2.WS
 The websocket service for chat, message requests and peer discovery.
 
 3.Exchanges
 This service handles the functionality of the app such as finding matches and returning them to the use based on their preferences.
-Uses distance.js middleware to calculate the geographic distance between potential matches (Redis will replace this in the next update)
+Uses distance.js middleware to calculate the geographic distance between potential matches (Redis will replace this in the next update).
+Endpoints- needcash, needdigital
 
 
 NGINX:-
@@ -38,10 +40,11 @@ Redis container stored the expired tokens and caches recent requests with TTL.
 
 
 Docker:-
-There is a yaml file that runs all 7 containers and handle container restarts, volumes, dependencies and the docker network.
+There is a yaml file that runs all 7 containers and handle container restarts, persistent volumes, dependencies and the docker network.
 
 
 
-This is just an overview of the blocks we have in this app. Check out each directory to find more cool stuff and how everything works. 
+This is just an overview of the blocks we have in this app. Check out each directory and their package.json to find more cool stuff and how everything works. 
+
 
 
